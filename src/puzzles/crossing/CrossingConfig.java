@@ -47,11 +47,23 @@ public class CrossingConfig implements Configuration {
         ArrayList<Configuration> successors = new ArrayList<>();
 
         if(!boatLeft){
-            successors.add(new CrossingConfig(this, 1, 0));
+            if(!(pupsRight - 1 < 0)) {
+                successors.add(new CrossingConfig(this, 1, 0));
+            }
         } else {
-            successors.add(new CrossingConfig(this, 1, 0));
-            successors.add(new CrossingConfig(this, 2, 0));
-            successors.add(new CrossingConfig(this, 0, 1));
+            if(pupsLeft - 2 < 0){
+                successors.add(new CrossingConfig(this, 0, 1));
+                successors.add(new CrossingConfig(this, 1, 0));
+            } else if(pupsLeft - 1 < 0){
+                successors.add(new CrossingConfig(this, 0, 1));
+            } else if(wolvesLeft - 1 < 0){
+                successors.add(new CrossingConfig(this, 1, 0));
+                successors.add(new CrossingConfig(this, 2, 0));
+            } else {
+                successors.add(new CrossingConfig(this, 1, 0));
+                successors.add(new CrossingConfig(this, 2, 0));
+                successors.add(new CrossingConfig(this, 0, 1));
+            }
         }
 
         return successors;
