@@ -24,7 +24,7 @@ public class Strings {
                 System.out.println("No solution found!");
             } else {
                 for(int i = 0; i < solution.size(); i++){
-                    System.out.println("Step " + i + ": " + solution.get(i));
+                    System.out.println("Step " + i + ": " + solution.get(i).toString());
                 }
             }
 
