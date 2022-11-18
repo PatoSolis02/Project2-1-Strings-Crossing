@@ -5,6 +5,11 @@ import puzzles.common.solver.Configuration;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/**
+ * Represents a single configuration in the Crossing puzzle.
+ *
+ * @author Patricio Solis
+ */
 public class CrossingConfig implements Configuration {
 
     /** the number of pups on the left side of the river */
