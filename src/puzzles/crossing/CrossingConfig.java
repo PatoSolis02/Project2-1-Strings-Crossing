@@ -27,7 +27,7 @@ public class CrossingConfig implements Configuration {
      * Constructor for Crossing configurations
      *
      * @param pups the initial number of pups on the left side
-     * @param wolves the intial number of pups on the right side
+     * @param wolves the initial number of pups on the right side
      */
     public CrossingConfig(int pups, int wolves){
         pupsLeft = pups;
@@ -110,7 +110,7 @@ public class CrossingConfig implements Configuration {
     }
 
     /**
-     * Checks if the current configuration is equal to other configruation
+     * Checks if the current configuration is equal to other configuration
      * by checking if the number of pups and wolves on the left side are equal
      * and if the boat is on the same side
      *
