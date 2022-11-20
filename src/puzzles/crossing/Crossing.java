@@ -24,7 +24,7 @@ public class Crossing {
             int wolves = Integer.parseInt(args[1]); // gets the number of wolves from command line args
 
             // displays the total number of pups and wolves in puzzle
-            System.out.println("Pups: x" + pups + ", Wolves: " + wolves);
+            System.out.println("Pups: " + pups + ", Wolves: " + wolves);
 
             // initial configuration
             CrossingConfig initConfig = new CrossingConfig(pups, wolves);
